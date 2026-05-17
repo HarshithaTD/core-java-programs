@@ -1,0 +1,23 @@
+package com.basics;
+
+public class CheckPalindrome {
+
+	public static void main(String[] args) {
+		int num=1221;
+		int temp=num;
+		int res=0;
+		while(num!=0) {
+			int rem=num%10;
+			res=(res*10)+rem;
+			num=num/10;
+		}
+		System.out.println(res);
+		if(temp==res) {
+			System.out.println("its palindrome");
+		}
+		else {
+			System.out.println("not palindrome");
+		}
+	}
+
+}

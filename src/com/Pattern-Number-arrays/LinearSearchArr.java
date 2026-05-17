@@ -1,0 +1,20 @@
+package com.basics;
+
+public class LinearSearchArr {
+	public static int l_search(int []arr ,int key) {
+	for(int i=0;i<arr.length;i++) {
+		if(arr[i]==key) {
+			return i;
+		}
+	}
+	
+	return -1;
+	}
+	public static void main(String[] args) {
+		int []arr= {18,7,17,65,48,1};
+		int key=17;
+		int ind=l_search(arr ,key);
+		System.out.println(ind);
+	}
+
+}

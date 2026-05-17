@@ -1,0 +1,24 @@
+package com.basics1;
+
+public class SquareMatrix {
+
+	public static void main(String[] args) {
+		int [][]arr= {{2,3,4},{5,6,7},{6,7,9}};
+		int l_sum=0;
+		int r_sum=0;
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<arr.length;j++) {
+				if(i==j) {
+					l_sum+=arr[i][j];
+				}
+				if(i+j==arr.length-1) {
+					r_sum+=arr[i][j];
+				}
+			}
+		}
+		System.out.println(r_sum);
+		System.out.println(l_sum);
+		System.out.println(Math.abs(r_sum-l_sum));
+	}
+
+}

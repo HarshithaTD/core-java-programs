@@ -1,0 +1,18 @@
+package com.basics;
+
+public class Methods {
+	public static void print_fact(int n) {
+		for(int i=1;i<=n;i++) {
+			if(n%i==0) {
+				System.out.print(i+" ");
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=24;
+		print_fact(n);
+	}
+
+}
